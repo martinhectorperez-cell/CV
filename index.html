@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Héctor Martín Pérez · Técnico Electromecánico · Mejora Continua y Lean</title>
+<meta name="description" content="Técnico Electromecánico con más de 19 años en Renault Argentina. Mejora continua, Lean, Kaizen, reducción de costos y ergonomía en puestos de armado.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1b2430;
+    --muted: #55606e;
+    --steel: #2f4b66;
+    --panel: #eef2f6;
+    --line: #cfd8e1;
+    --page: #ffffff;
+    --bg: #e3e8ee;
+    --signal: #f2b705;
+    --sans: "Barlow", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --display: "Barlow Condensed", "Arial Narrow", "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e8edf2;
+      --muted: #a4afbc;
+      --steel: #8fb2d3;
+      --panel: #1c2530;
+      --line: #324050;
+      --page: #141b23;
+      --bg: #0d1218;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  a { color: var(--steel); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--signal); outline-offset: 2px; }
+
+  .toolbar {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .toolbar button {
+    font: 600 14px var(--sans);
+    color: var(--ink);
+    background: var(--page);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+  }
+  .toolbar button:hover { border-color: var(--steel); }
+
+  .sheet {
+    max-width: 960px;
+    margin: 16px auto 48px;
+    background: var(--page);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  header.top {
+    padding: 36px 40px 28px;
+    border-bottom: 1px solid var(--line);
+    border-left: 10px solid var(--signal);
+  }
+  h1 {
+    margin: 0;
+    font: 700 clamp(2.2rem, 6vw, 3.4rem)/1.05 var(--display);
+    letter-spacing: 0.01em;
+  }
+  .role {
+    margin: 10px 0 0;
+    font: 600 clamp(1.1rem, 2.6vw, 1.4rem)/1.3 var(--display);
+    color: var(--steel);
+    letter-spacing: 0.02em;
+  }
+
+  .grid { display: grid; grid-template-columns: 290px 1fr; }
+  aside { background: var(--panel); padding: 28px 28px 36px 40px; border-right: 1px solid var(--line); }
+  main { padding: 28px 40px 40px; }
+
+  h2 {
+    margin: 0 0 12px;
+    font: 700 1.35rem/1.2 var(--display);
+    letter-spacing: 0.03em;
+    color: var(--steel);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--signal);
+    display: inline-block;
+  }
+  section + section { margin-top: 28px; }
+
+  aside ul { list-style: none; margin: 0; padding: 0; }
+  aside li { margin: 0 0 8px; font-size: 0.95rem; }
+  .contact li { word-break: break-word; }
+  .contact span { display: block; color: var(--muted); font-size: 0.82rem; }
+
+  .skill-group { margin-bottom: 14px; }
+  .skill-group h3 { margin: 0 0 4px; font: 600 0.98rem var(--sans); }
+  .skill-group p { margin: 0; font-size: 0.93rem; color: var(--muted); }
+
+  .job { margin-bottom: 24px; }
+  .job h3 { margin: 0; font: 600 1.08rem/1.3 var(--sans); }
+  .job .meta { margin: 2px 0 8px; font-size: 0.9rem; color: var(--muted); }
+  .job ul { margin: 0; padding-left: 1.15rem; }
+  .job li { margin-bottom: 5px; }
+  .job.compact { margin-bottom: 16px; }
+  .job.compact ul { margin-top: 0; }
+
+  .profile { margin: 0; font-size: 1.04rem; }
+
+  footer.note { padding: 14px 40px; border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--muted); }
+
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: 1fr; }
+    aside { border-right: 0; border-bottom: 1px solid var(--line); padding: 24px 24px; }
+    main { padding: 24px; }
+    header.top { padding: 28px 24px 22px; border-left-width: 8px; }
+    footer.note { padding: 14px 24px; }
+  }
+
+  @media print {
+    @page { size: A4; margin: 12mm; }
+    :root, :root[data-theme] {
+      --ink: #1b2430; --muted: #4a5561; --steel: #2f4b66;
+      --panel: #eef2f6; --line: #cfd8e1; --page: #fff; --bg: #fff;
+    }
+    body { font-size: 11pt; }
+    .toolbar { display: none; }
+    .sheet { margin: 0; border: 0; max-width: none; }
+    .grid { grid-template-columns: 240px 1fr; }
+    header.top, aside, main { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .job { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button type="button" onclick="window.print()">Descargar como PDF</button>
+</div>
+
+<article class="sheet">
+  <header class="top">
+    <h1>Héctor Martín Pérez</h1>
+    <p class="role">Técnico Electromecánico · Mejora Continua · Lean · Kaizen</p>
+  </header>
+
+  <div class="grid">
+    <aside>
+      <section class="contact">
+        <h2>Contacto</h2>
+        <ul>
+          <li><span>Ubicación</span>Córdoba, Argentina</li>
+          <li><span>Celular</span><a href="tel:+5493512280688">(0351) 152280688</a></li>
+          <li><span>Email</span><a href="mailto:martinhectorperez@yahoo.com.ar">martinhectorperez@yahoo.com.ar</a></li>
+          <li><span>Movilidad</span>Auto propio</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Competencias</h2>
+        <div class="skill-group">
+          <h3>Mejora continua</h3>
+          <p>Lean, Kaizen, eliminación de desperdicios (muda), estudio de tiempos y métodos, balanceo de línea, estandarización de puestos.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Ergonomía</h3>
+          <p>Rediseño de puestos de armado para reducir esfuerzo, levantamiento de brazos y flexión de tronco.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Logística de línea</h3>
+          <p>Picking luminoso (pick-to-light), carros Servan, carros full kitting.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Técnicas</h3>
+          <p>Baja tensión, tableros, comando de motores, PLC Siemens LOGO, neumática, metrología, soldadura de arco, puentes grúa.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Herramientas</h3>
+          <p>AutoCAD, Microsoft Office, inteligencia artificial aplicada a productividad y contenido digital.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Formación</h2>
+        <ul>
+          <li><strong>Técnico Electromecánico</strong> con orientación en Electrónica. E.E.T. N.º 5138, Salta. Promoción 2000.</li>
+          <li>Cursos de Seguridad e Higiene.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Otros conocimientos</h2>
+        <ul>
+          <li>Instalaciones eléctricas antiexplosivas</li>
+          <li>Corrección del factor de potencia</li>
+          <li>Mediciones eléctricas y puesta a tierra</li>
+          <li>Electrónica básica</li>
+          <li>Licencia de conducir</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Perfil profesional</h2>
+        <p class="profile">Técnico Electromecánico con más de 19 años en Renault Argentina: 10 en producción (montaje final) y 10 en Mejora Continua / Performance. Especializado en optimización de tiempos operativos, balanceo de línea, reducción de costos y ergonomía en puestos de armado. Experiencia en soluciones de abastecimiento y logística interna, con sólida base técnica en electricidad industrial, PLC, neumática y mantenimiento. Incorporo herramientas de inteligencia artificial para analizar, documentar y presentar mejoras con mayor rapidez.</p>
+      </section>
+
+      <section>
+        <h2>Experiencia</h2>
+
+        <div class="job">
+          <h3>Kaizen / Performance (Mejora Continua) · Renault Argentina</h3>
+          <p class="meta">Córdoba · Desde abril de 2007 en la empresa · Actualidad</p>
+          <ul>
+            <li>Intervine decenas de puestos de armado en línea, reduciendo pasos y segundos de ciclo mediante balanceo de línea.</li>
+            <li>Mejoré la ergonomía de los puestos: reduje el levantamiento de brazos y evité la flexión excesiva del operario.</li>
+            <li>Participé en la implementación de picking luminoso, carros Servan y carros full kitting para reducir desplazamientos y tiempos no productivos.</li>
+            <li>Participé en el montaje de la línea unificada.</li>
+            <li>Contribuí a la reducción de costos operativos mediante la eliminación de desperdicios y la mejora de tiempos.</li>
+            <li>Responsable de la ejecución de los trabajos asignados, con foco en seguridad y calidad.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Producción, Montaje Final · Renault Argentina</h3>
+          <p class="meta">Primeros 10 años en la empresa</p>
+          <ul>
+            <li>Trabajé en distintos sectores del montaje final: cofre motor, asientos, alfombras, tren trasero y delantero, coberturas de puertas, paragolpes y cámara de agua, entre otros.</li>
+            <li>Conocimiento directo del proceso, que hoy aplico para detectar oportunidades de mejora en el puesto.</li>
+          </ul>
+        </div>
+
+        <div class="job compact">
+          <h3>Técnico de mantenimiento · Henkel (proveedor de Volkswagen)</h3>
+          <p class="meta">Septiembre 2006 – marzo 2007</p>
+          <ul>
+            <li>Mantenimiento eléctrico y mecánico de lavadoras industriales MANSER, incluyendo PLC y comunicación AS-i.</li>
+          </ul>
+        </div>
+
+        <div class="job compact">
+          <h3>Mantenimiento · ENPOLEX S.A.</h3>
+          <p class="meta">Agosto – septiembre 2006</p>
+          <ul>
+            <li>Mantenimiento de inyectoras de polietileno expandido; cambio, arreglo y adaptación de matrices.</li>
+          </ul>
+        </div>
+
+        <div class="job compact">
+          <h3>Electricista de producción y mantenimiento · BETONMAC</h3>
+          <p class="meta">Febrero – julio 2006</p>
+          <ul>
+            <li>Cableado de potencia, comando de motores y electroválvulas neumáticas en plantas hormigoneras.</li>
+            <li>Instalación de elementos neumáticos (FRL, cilindros, pulmones) y puesta en marcha manual y automática.</li>
+          </ul>
+        </div>
+
+        <div class="job compact">
+          <h3>Técnico electricista · JRC Servicios Eléctricos</h3>
+          <p class="meta">Marzo 2004 – febrero 2006</p>
+          <ul>
+            <li>Instalaciones eléctricas en obras civiles, tableros, iluminación, porteros eléctricos y bombas de agua.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Referencias</h2>
+        <p>Disponibles a solicitud.</p>
+      </section>
+    </main>
+  </div>
+</article>
+
+</body>
+</html>
